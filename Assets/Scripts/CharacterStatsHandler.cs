@@ -21,9 +21,13 @@ public class CharacterStatsHandler : MonoBehaviour
             statusSO = Instantiate(baseStats.statusSO);
         }
         CurrentStates = new Status { statusSO = statusSO };
-        // TODO
+
         CurrentStates.statsChangeType = baseStats.statsChangeType;
+        CurrentStates.level = baseStats.level;
         CurrentStates.maxHealth = baseStats.maxHealth;
         CurrentStates.gold = baseStats.gold;
+
+        CharacterManager.instance.DisplayPlayerInfo(CurrentStates.level, CurrentStates.gold, CurrentStates.maxHealth);
+        CharacterManager.instance.DisplayCombatStat(statusSO.atk, statusSO.def, statusSO.critical);
     }
 }

@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatusBtn : MonoBehaviour
+public class ClickableInfo : MonoBehaviour
 {
-    public void OpenStatus()
+    public void OpenInfo()
     {
         gameObject.SetActive(true);
     }
-    public void CloseStatus()
+    public void CloseInfo()
     {
         gameObject.SetActive(false);
     }
