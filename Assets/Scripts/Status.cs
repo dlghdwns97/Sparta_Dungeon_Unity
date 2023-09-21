@@ -14,8 +14,9 @@ public enum StatsChangeType
 public class Status
 {
     public StatsChangeType statsChangeType;
-    [Range(1, 100)] public int maxHealth;
+    [Range(1, 100)] public int level;
     [Range(0, 20000)] public int gold;
-
+    [Range(1, 100)] public int maxHealth;
+    
     public StatusSO statusSO;
 }

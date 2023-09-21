@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b4ba60e2d32e4429971ea679fb9b8d, type: 3}
   m_Name: Player_DefaultStatusData
   m_EditorClassIdentifier: 
-  atk: 30
+  atk: 20
   def: 40
   critical: 10
