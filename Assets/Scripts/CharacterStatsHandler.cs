@@ -30,4 +30,27 @@ public class CharacterStatsHandler : MonoBehaviour
         CharacterManager.instance.DisplayPlayerInfo(CurrentStates.level, CurrentStates.gold, CurrentStates.maxHealth);
         CharacterManager.instance.DisplayCombatStat(statusSO.atk, statusSO.def, statusSO.critical);
     }
+    public void AddStat(int i)
+    {
+        switch (i)
+        {
+            case 1:
+                CurrentStates.maxHealth += 40;
+                CharacterManager.instance.DisplayPlayerInfo(CurrentStates.level, CurrentStates.gold, CurrentStates.maxHealth);
+                break;
+            case 2:
+                CurrentStates.statusSO.atk += 10;
+                CharacterManager.instance.DisplayCombatStat(CurrentStates.statusSO.atk, CurrentStates.statusSO.def, CurrentStates.statusSO.critical);
+                break;
+            case 3:
+                CurrentStates.statusSO.def += 20;
+                CharacterManager.instance.DisplayCombatStat(CurrentStates.statusSO.atk, CurrentStates.statusSO.def, CurrentStates.statusSO.critical);
+                break;
+            case 4:
+                CurrentStates.statusSO.critical += 30;
+                CharacterManager.instance.DisplayCombatStat(CurrentStates.statusSO.atk, CurrentStates.statusSO.def, CurrentStates.statusSO.critical);
+                break;
+        }
+
+    }
 }
