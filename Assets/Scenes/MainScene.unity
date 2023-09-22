@@ -269,7 +269,19 @@ PrefabInstance:
     - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 296133580}
+      objectReference: {fileID: 296133585}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClickableInfo, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2329954547159358014, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -796,7 +808,19 @@ PrefabInstance:
     - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 296133580}
+      objectReference: {fileID: 296133585}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClickableInfo, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2329954547159358014, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -881,6 +905,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5943294856461431141, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b549cf6f37384b14296c1c01e5276910, type: 3}
     - target: {fileID: 5966893656446426069, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_Name
       value: Item (3)
@@ -1175,6 +1203,7 @@ GameObject:
   - component: {fileID: 296133584}
   - component: {fileID: 296133583}
   - component: {fileID: 296133582}
+  - component: {fileID: 296133585}
   m_Layer: 5
   m_Name: itemEquip
   m_TagString: Untagged
@@ -1268,6 +1297,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &296133585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296133580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea912a32a5570b1468082c554bea75d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &336155342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,13 +1945,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296133580}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 296133585}
+        m_TargetAssemblyTypeName: ClickableInfo, Assembly-CSharp
+        m_MethodName: CloseInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3426,7 +3467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inventory  4/20
+  m_text: Inventory  0/20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4858,7 +4899,19 @@ PrefabInstance:
     - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 296133580}
+      objectReference: {fileID: 296133585}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClickableInfo, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2329954547159358014, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5044,13 +5097,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296133580}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 296133585}
+        m_TargetAssemblyTypeName: ClickableInfo, Assembly-CSharp
+        m_MethodName: CloseInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5767,7 +5820,19 @@ PrefabInstance:
     - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 296133580}
+      objectReference: {fileID: 296133585}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClickableInfo, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 458427106488474849, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2329954547159358014, guid: 1bce6d5095fcb234fa8ccbcd980ed393, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

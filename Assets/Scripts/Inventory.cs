@@ -9,18 +9,4 @@ public class Inventory : MonoBehaviour
     {
         ItemManager.instance.MakeItemList();
     }
-
-    public void EquipItem()
-    {
-        gameObject.SetActive(true);
-    }
-
-    public void UnequipItem()
-    {
-        gameObject.SetActive(true);
-    }
-    public void SelectConfirmORCancel()
-    {
-        gameObject.SetActive(false);
-    }
 }
